@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Hà Thành</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+<style>
+    .login {
+        /* width: 350px;
+	height: 200px;
+	background-color: green;
+	text-align: center;
+	border:1px solid grey;
+	border-radius: 10px; */
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    .login input {
+        width: 180px;
+        height: 30px;
+        padding-left: 20px;
+        display: inline-block;
+        border: none;
+        outline: none;
+    }
+
+    .pass {
+        width: 80%;
+        height: auto;
+        /* margin-top: 50px; */
+        margin-bottom: 30px;
+        border: 1px solid #167bff;
+        border-radius: 5px;
+        /* margin-left: auto;
+	margin-right: auto; */
+    }
+
+    .pass img {
+        width: 20px;
+        vertical-align: middle;
+
+    }
+
+    .pass input {
+        border: none;
+        outline: none;
+    }
+
+    button {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: #167bff;
+        color: white;
+    }
+
+    button:hover {
+        width: 222px;
+        height: 44px;
+    }
+
+    a {
+        float: right;
+        padding-right: 40px;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .error {
+        color: red;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="index.html"><img src="images/logo.png" style="width:20%" alt=""></a>
+                </div>
+                <div class="col-md-8 mt-4 text-right">
+                    <div class="btn btn-outline-light py-1">
+                        <a href="login-res.html" style="margin: 0; text-align:center">Login/Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary my-menu">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mainmenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse tanh" id="mainmenu">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="iphone.html">iPhone</a>
+                        <ul>
+                            <li><a href=""> iPhone 13</a></li>
+                            <li><a href=""> iPhone 12</a></li>
+                            <li><a href=""> iPhone 11</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="ipad.html">iPad</a>
+                        <ul>
+                            <li><a href=""> iPad Pro</a></li>
+                            <li><a href=""> iPad Air</a></li>
+                            <li><a href=""> iPad Gen</a></li>
+                            <li><a href=""> iPad Mini</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="applewatch.html">Watch</a>
+                        <ul>
+                            <li><a href=""> Series 7</a></li>
+                            <li><a href=""> Series 6</a></li>
+                            <li><a href=""> Series 5</a></li>
+                            <li><a href=""> SE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="macbook.html" id="dropdownId" data-toggle="dropdown">Mac</a>
+                        <ul>
+                            <li><a href=""> Mac Pro</a></li>
+                            <li><a href=""> Mac Air</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa-solid fa-cart-arrow-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mt-3">
+                <h3>Login</h3>
+                <form action="" method="post" name="login_form">
+                    <label for="">Email</label>
+                    <div class="form-group pass">
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email"
+                            aria-describedby="helpId">
+                        <small id="email_err" class="error"></small>
+                    </div>
+                    <div class="login">
+                        <label for="">Password</label>
+                        <div class="pass">
+                            <input name="pass" id="pass" type="password" placeholder="Enter password">
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span>&nbsp;</span>
+                            <span id="show_pass"><i class="fa-solid fa-eye text-right"></i></span>
+                            <span id="hide_pass"><i class="fa-solid fa-eye-slash text-right"></i></span>
+                            <small id="pass_err" class="error"></small>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <button class="btn btn-primary" type="submit" name="btn_login">Đăng Nhập</button>
+                        <hr>
+                        <p><small>Bạn chưa có tài khoản đăng kí<a href="" style="position: absolute; margin-top:3px">
+                                    &nbsp;tại đây</a></small></p>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <h4 class="mt-3">Register</h4>
+                <form method="post" name="contactform">
+                    <div class="form-group">
+                        <label for="">Họ và tên</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Họ và tên">
+                        <small id="name_err" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Số điện thoại</label>
+                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Số điện thoại">
+                        <small id="phone_err" class="error"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" name="email" id="email" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Confirm Password</label>
+                        <input type="password" name="email" id="email" class="form-control" placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary mb-3" name="btn_sub">Đăng Kí</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Giới thiệu</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-apple"></i> Apple Hà Thành</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Địa chỉ: 154 Xã Đàn, Phương Liên, Đống Đa, Hà
+                            Nội
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i> Hotline: 0886402222</li>
+                        <li><i class="fa-brands fa-facebook"></i> Facebook: Apple Hà Thành</li>
+                        <li><i class="fa-solid fa-earth-asia"></i> Website: applehathanh.vn</li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/payment-1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-2.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-3.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-4.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Chính Sách</h3>
+                    <ul>
+                        <li><a href="">Chính Sách Bảo Hành</a></li>
+                        <li><a href="">Chính Sách Đổi Trả</a></li>
+                        <li><a href="">Chính Sách Trả Góp</a></li>
+                        <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="">Điều Khoản Sử Dung</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5495692963505!2d105.835497614794!3d21.010685386008188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8709b34871%3A0xacc8d5d2461ef627!2zMTU0IFAuIFjDoyDEkMOgbiwgUGjGsMahbmcgTGnDqm4sIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1645186156362!5m2!1svi!2s"
+                        width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="JS/login_register.js"></script>
+</body>
+
+</html>

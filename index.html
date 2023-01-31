@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone </title>
+    <link rel="icon" href="/images/logo.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+<style>
+    @media screen and (max-width: 768px) {
+        .form-inline{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        .form-inline{
+            display: inline-block;
+        }
+    }
+</style>
+
+<body>
+    <!-- header -->
+    <header class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <a href="index.html"><img src="images/logo.png" style="width:20%" alt=""></a>
+                </div>
+                <div class="col-md-8 mt-4 text-right">
+                    <div class="btn btn-outline-light py-1"><a href="login-res.html">Login/Register</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- menu -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary my-menu">
+        <div class="container">
+            <img src="images/logo.png" class="logo">
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#mainmenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse tanh" id="mainmenu">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="iphone.html">iPhone</a>
+                        <ul>
+                            <li><a href="iphone13.html"> iPhone 13</a></li>
+                            <li><a href="iphone13.html"> iPhone 12</a></li>
+                            <li><a href="iphone13.html"> iPhone 11</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="ipad.html">iPad</a>
+                        <ul>
+                            <li><a href=""> iPad Pro</a></li>
+                            <li><a href=""> iPad Air</a></li>
+                            <li><a href=""> iPad Gen</a></li>
+                            <li><a href=""> iPad Mini</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="applewatch.html">Watch</a>
+                        <ul>
+                            <li><a href=""> Series 7</a></li>
+                            <li><a href=""> Series 6</a></li>
+                            <li><a href=""> Series 5</a></li>
+                            <li><a href=""> SE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown dhover">
+                        <a class="nav-link" href="macbook.html" id="dropdownId" data-toggle="dropdown">Mac</a>
+                        <ul>
+                            <li><a href=""> Mac Pro</a></li>
+                            <li><a href=""> Mac Air</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fa-solid fa-cart-arrow-down"></i></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Bạn tìm gì...">
+                    <button class="btn btn-success my-2 my-sm-0" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slider -->
+    <div class="container">
+        <div id="banner" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#banner" data-slide-to="0" class="active"></li>
+                <li data-target="#banner" data-slide-to="1"></li>
+                <li data-target="#banner" data-slide-to="2"></li>
+                <li data-target="#banner" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <a href="iphone.html"><img src="images/slides/slider_1.jpg" alt="First slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="applewatch.html"><img src="images/slides/slider_2.jpg" alt="Second slide"></a>
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="ipad.html"><img src="images/slides/slider_3.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="ipadmini.html"></a><img src="images/slides/slider_4.jpg" alt="Third slide"></a>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    </div>
+
+    <div class="container mt-3 text-center border-1 gt">
+        <div class="row">
+            <div class="col-md-3"><i class="fa-solid fa-thumbs-up"></i> Hàng Chính Hãng Apple</div>
+            <div class="col-md-3"><i class="fa-solid fa-van-shuttle"></i> Giao hàng toàn quốc</div>
+            <div class="col-md-3"><i class="fa-solid fa-headphones-simple"></i> Hotline: 0945963635</div>
+            <div class="col-md-3"><i class="fa-solid fa-reply"></i> Bảo hành 12 tháng 1 đổi 1</div>
+        </div>
+    </div>
+    <!-- iphone -->
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col-sm-1"></div> -->
+            <div class="col-md-4">
+                <h2 class="mt-2 mb-0">iPhone</h2>
+            </div>
+            <!-- <div class="col-md-5"></div>
+            <div class="col-sm-1"></div> -->
+            <div class="col-md-8 mt-3 text-right">
+                <a href="iphone.html" style="color: #3c4042;
+                font-weight: 600;
+                float: right; font-size: 20px;">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="boxSlider">
+            <div class="image-slider">
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmblue.png" alt=""></div>
+                    <a href="detail-ip13.html"><span>iPhone 13 Pro Max Sierra Blue Chính Hãng VN/A Newseal</span></a>
+                    <h5 style="text-align:center;color:red">30.890.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmgold.png" alt=""></div>
+                    <span>iPhone 13 Pro Max Gold Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">30.890.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmgra.png" alt=""></div>
+                    <span>iPhone 13 Pro Max Graphite Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">30.490.000đ</h5>
+
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmsil.png" alt=""></div>
+                    <span>iPhone 13 Pro Max Silver Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">30.490.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmblue.png" alt=""></div>
+                    <span>iPhone 13 Pro Sierra Blue Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">28.390.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmgold.png" alt=""></div>
+                    <span>iPhone 13 Pro Gold Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">27.990.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmgra.png" alt=""></div>
+                    <span>iPhone 13 Pro Graphite Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">27.990.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img1" src="images/products/iPhone/ip13pmsil.png" alt=""></div>
+                    <span>iPhone 13 Pro Silver Chính Hãng VN/A Newseal</span>
+                    <h5 style="text-align:center;color:red">27.990.000đ</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- apple watch -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mt-4 mb-0">Apple Watch</h3>
+            </div>
+            <div class="col-md-8 mt-4 text-right">
+                <a href="applewatch.html" style="color: #3c4042;
+                font-weight: 600;
+                float: right; font-size: 20px;">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="boxSlider">
+            <div class="image-slider1">
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/bl-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Blue Aluminum Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">10.790.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/bla-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Mignight Aluminum Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">10.790.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/red-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Red Aluminum Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">10.790.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/sli-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Silver Aluminum Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">10.790.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/xanh-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Green Aluminum Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">10.790.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/bl-cs-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Graphite Stainless Steel Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">18.290.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/sli-cs-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Silver Stainless Steel Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">18.290.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img2" src="images/products/apple-watch/go-cs-1.jpg" alt=""></div>
+                    <span>Apple Watch Series 7 Gold Stainless Steel Case with Sport Band</span>
+                    <h5 style="text-align:center;color:red">18.290.000đ</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ipad -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mt-4 mb-0">iPad</h3>
+            </div>
+            <div class="col-md-8 mt-4 text-right">
+                <a href="ipad.html" style="color: #3c4042;
+                font-weight: 600;
+                float: right; font-size: 20px;">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="boxSlider">
+            <div class="image-slider">
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-pro-11-select-cell-silver-202104.jpg" alt=""> </div>
+                    <span>iPad Pro 2021 M1 Wifi + 5G Silver Newseal</span>
+                    <h5 style="text-align:center;color:red">21.400.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-pro-11-select-cell-spacegray-202104-4fc6af9a-b9f9-42bc-9814-d4b423135cd6.jpg"
+                            alt=""> </div>
+                    <span>iPad Pro 2021 M1 Wifi + 5G SpaceGray Newseal</span>
+                    <h5 style="text-align:center;color:red">21.400.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-air-select-wifi-blue-202009.webp" alt=""> </div>
+                    <span>iPad Air 4 Wifi + 5G (Cellular) Blue Newseal</span>
+                    <h5 style="text-align:center;color:red">16.200.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-air-select-wifi-gold-202009.webp" alt=""> </div>
+                    <span>iPad Air 4 Wifi + 5G (Cellular) Gold Newseal</span>
+                    <h5 style="text-align:center;color:red">16.200.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-air-select-wifi-green-202009.webp" alt=""> </div>
+                    <span>iPad Air 4 Wifi + 5G (Cellular) Green Newseal</span>
+                    <h5 style="text-align:center;color:red">16.200.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-air-select-wifi-silver-202009.webp" alt=""> </div>
+                    <span>iPad Air 4 Wifi + 5G (Cellular) Silver Newseal</span>
+                    <h5 style="text-align:center;color:red">16.200.000đ</h5>
+                </div>
+                <div class="image-item">
+                    <div class="boxImg"><img class="img3"
+                            src="images/products/ipad/ipad-air-select-wifi-spacegray-202009.webp" alt=""> </div>
+                    <span>iPad Air 4 Wifi + 5G (Cellular) Space Gray Newseal</span>
+                    <h5 style="text-align:center;color:red">16.200.000đ</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3 class="mt-4 mb-0">Tin tức</h3>
+            </div>
+            <div class="col-md-8 mt-4 text-right">
+                <a href="news.html" style="color: #3c4042;
+                font-weight: 600;
+                float: right; font-size: 20px;">Xem tất cả <i class="fa-solid fa-angle-right"></i></a>
+            </div>
+        </div>
+        <div class="boxSlider">
+            <div class="image-slider2">
+                <div class="image-item">
+                    <a href="n1.html" class="text-des">
+                        <div class="boxImg"><img class="img1"
+                                src="images/img-news/5453396-cover-applemusic-hifi-airpods3.jpg" alt=""></div>
+                        <span>Apple sắp ra mắt AirPods mới và cập nhật chất lượng nhạc Hifi cho Apple Music</span>
+                    </a>
+                    <p>Đăng bởi <b>Admin</b> - 22/02/2022 </p>
+                    <p>Theo một trang web âm nhạc - Hits Daily Double cho rằng Apple sẽ nâng cấp ...</p>
+                </div>
+                <div class="image-item">
+                    <a href="n2.html" class="text-des">
+                        <div class="boxImg"><img class="img1" src="images/img-news/5440709-cover-ipad-pro-2.png" alt="">
+                        </div>
+                        <span>iPad Pro M1 chính thức: màn hình miniLED 12.9', 2500 vùng sáng, 16GB RAM, bộ nhơ
+                            2TB</span>
+                    </a>
+                    <p>Đăng bởi <b>Admin</b> - 15/02/2022 </p>
+                    <p>Apple hôm nay bất ngờ tháo chip M1 trên Macbook M1 và gắn vào iPad...</p>
+                </div>
+                <div class="image-item">
+                    <a href="n3.html" class="text-des">
+                        <div class="boxImg"><img class="img1"
+                                src="images/img-news/5440741-cover-apple-new-imac-spring21-hero-04202021-full-bleed-image-jpg-large-2x.jpg"
+                                alt=""></div>
+                        <span>Apple iMac 24' chính thức: Thiết kế mới tuyệt đẹp siêu mỏng, 7 màu sắc, chạy Apple
+                            M1</span>
+                    </a>
+                    <p>Đăng bởi <b>Admin</b> - 10/02/2022 </p>
+                    <p>Apple chính thức giới thiệu iMac mới với thiết kế mới, màu mới và đặt biệt là phần cứng, ... </p>
+                </div>
+                <div class="image-item">
+                    <a href="n4.html" class="text-des">
+                        <div class="boxImg"><img class="img1"
+                                src="images/img-news/5440575-cover-creen-shot-2021-04-21-at-00-18-30.png" alt=""></div>
+                        <span>Apple TV 4K thế hệ mới ra mắt: A12 bionic, remote mới, cân màu bằng iPhone</span>
+                    </a>
+                    <p>Đăng bởi <b>Admin</b> - 05/02/2022 </p>
+                    <p>Apple TV 4K vận hành dựa trên vi xử lý A12 Bionic mới nhất, hỗ trợ nội dung HDR với tần số ...
+                    </p>
+                </div>
+                <div class="image-item">
+                    <a href="n5.html" class="text-des">
+                        <div class="boxImg"><img class="img1"
+                                src="images/img-news/5440590-apple-airtag-accessories-042021.jpg" alt=""></div>
+                        <span>Apple Airtag chính thức: Tím kiếm đồ vật thất lạc nhờ mạng lưới hàng Tỷ thiết bị
+                            Apple</span>
+                    </a>
+                    <p>Đăng bởi <b>Admin</b> - 20/01/2022 </p>
+                    <p>Apple chính thức giới thiệu AirTag, thiết bị giúp hỗ trợ định vụ đồ vật quan trọng khi bị thất
+                        lạc... </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- hotline -->
+    <div>
+        <ul class="sharecs-pc-net-bar">
+            <li class="facebook">
+                <a href="https://www.facebook.com/applehathanh.vn" target="_blank" rel="nofollow" />
+            </li>
+            <li class="zalo">
+                <a href="https://zalo.me/0945963635" target="_blank" rel="nofollow" />
+            </li>
+        </ul>
+    </div>
+    <div class="hotline-phone-ring-wrap">
+        <div class="hotline-phone-ring">
+            <div class="hotline-phone-ring-circle"></div>
+            <div class="hotline-phone-ring-circle-fill"></div>
+            <div class="hotline-phone-ring-img-circle">
+                <a href="tel:0945963635" class="pps-btn-img">
+                    <img src="https://nguyenhung.net/wp-content/uploads/2019/05/icon-call-nh.png" alt="Gọi điện thoại"
+                        width="50">
+                </a>
+            </div>
+        </div>
+        <div class="hotline-bar">
+            <a href="tel:0945963635">
+                <span class="text-hotline">0945963635</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-dark text-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>Giới thiệu</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-apple"></i> Apple Hà Thành</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Địa chỉ: 154 Xã Đàn, Phương Liên, Đống Đa, Hà Nội
+                        </li>
+                        <li><i class="fa-solid fa-phone"></i> Hotline: 0886402222</li>
+                        <li><i class="fa-brands fa-facebook"></i> Facebook: Apple Hà Thành</li>
+                        <li><i class="fa-solid fa-earth-asia"></i> Website: applehathanh.vn</li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <img src="images/payment-1.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-2.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-3.png" alt="">
+                                    </td>
+                                    <td>
+                                        <img src="images/payment-4.png" alt="">
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>Chính Sách</h3>
+                    <ul>
+                        <li><a href="">Chính Sách Bảo Hành</a></li>
+                        <li><a href="">Chính Sách Đổi Trả</a></li>
+                        <li><a href="">Chính Sách Trả Góp</a></li>
+                        <li><a href="">Hướng Dẫn Mua Hàng</a></li>
+                        <li><a href="">Điều Khoản Sử Dung</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.5495692963505!2d105.835497614794!3d21.010685386008188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab8709b34871%3A0xacc8d5d2461ef627!2zMTU0IFAuIFjDoyDEkMOgbiwgUGjGsMahbmcgTGnDqm4sIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1645186156362!5m2!1svi!2s"
+                        width="100%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $('#banner').carousel({
+            interval: 1000 * 2
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.image-slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'> <i class="fa-solid fa-arrow-left"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'> <i class="fa-solid fa-arrow-right"></i></button>`,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+                ]
+            }
+            );
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.image-slider1').slick({
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                infinite: true,
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'> <i class="fa-solid fa-arrow-left"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'> <i class="fa-solid fa-arrow-right"></i></button>`,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll:2,
+                        }
+                    }
+
+                ]
+            }
+            );
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.image-slider2').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                prevArrow: `<button type='button' class='slick-prev slick-arrow'> <i class="fa-solid fa-arrow-left"></i></button>`,
+                nextArrow: `<button type='button' class='slick-next slick-arrow'> <i class="fa-solid fa-arrow-right"></i></button>`,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
+
+                ]
+            }
+            );
+        });
+    </script>
+
+</body>
+
+</html>
